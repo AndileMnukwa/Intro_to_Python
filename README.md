@@ -10,8 +10,6 @@ Python is constantly growing in the market. With Python knowledge, I may find my
 
 There are various job fields that Python has to offer. Integrating applications with MySQL is in high demand because MySQL and Python are both open-source applications.
 
-Python was conceived in the late 1980s and Guido van Rossum started implementing it at CWI in the Netherlands in December 1989. It is a relatively simple language that includes a standard library that provides modules for a large number of processes that programs deal with.
-
 Comments could be used for a wide range of purposes, for example: 
 
 Augmenting program code with basic descriptions to generate external documentation.
