@@ -3,19 +3,6 @@
 
 Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991. Python emphasizes code readability and allows programmers to express concepts in fewer lines of code compared to other programming languages.
 
-
-
-Comments could be used for a wide range of purposes, for example: 
-
-Augmenting program code with basic descriptions to generate external documentation.
-Integration with source code management systems and other kinds of external programming tools.
-
-Comments in Python start with the hash character, #, and extend to the end of the physical line.
-
-In [1] : the_world_is_flat = true
-if the_world_is_flat:
-  print("Be careful not to fall off!")
-
 # this is the first comment
 span = 1 # amd this is the second comment
          # ... and now a third
@@ -96,6 +83,7 @@ Hello, World!
 None
 
 # Classes 
+
 class Dog:
       def _init_(self, name):
         self.name = name
@@ -113,7 +101,62 @@ Rover says: Bark!
 another_dog.speak()
 Fluffy says: Bark!
 
+# Day 3
 
+# Ints and Floats
+input: 20/4
+out  : 5.0
+
+input: int(4**4.0)
+out  : 256
+
+input: int(8.99999)
+out  : 8
+
+input: round(1.2 - 1.0, 2)
+out  : 0.2
+
+integers, decimals, booleans(Casting Booleans) 
+
+# strings
+slicing 
+    myList = [1, 2, 3, 4, 5]
+        myList[2:4]
+    out: [3, 4]
+    
+formatting 
+    f'My number is: '+str(5)
+    out: 'My name is: 5'
+
+    f'Pi is: {math.pi:.2f}'
+    out: 'Pi is: 3.14'
+
+    f'Pi is: {}'.format(math.pi)
+    out: 'Pi is: 3.141592653589793'
+
+Multi-line Strings
+      myString = '''
+      Here is a long block of text
+      I can add newlines!
+      the text doesn't stop until it sees \'\'\'
+
+      '''
+
+      myString
+      "\Here is a long block of text\nI can add newlines!\nthe text doesn't stop until it sees '''\n\n"
+
+output: print(mystring)
+
+      Here is a long block of text
+      I can add newlines!
+      the text doesn't stop until it sees '''
+
+# bytes
+  In: bytes(4)
+  out: b'\x00\x00\x00\x00'
+
+  In: smileBytes = bytearray('😊', 'utf-8')
+  out: '😊'
 
     
 
