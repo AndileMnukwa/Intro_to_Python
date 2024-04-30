@@ -3,12 +3,7 @@
 
 Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991. Python emphasizes code readability and allows programmers to express concepts in fewer lines of code compared to other programming languages.
 
-Python is an interpreted language. This means that a new executable file is created when you run your code.
-The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.
 
-Python is constantly growing in the market. With Python knowledge, I may find myself in top positions within a few years, but I should increase my knowledge as much as possible. 
-
-There are various job fields that Python has to offer. Integrating applications with MySQL is in high demand because MySQL and Python are both open-source applications.
 
 Comments could be used for a wide range of purposes, for example: 
 
@@ -25,3 +20,105 @@ if the_world_is_flat:
 span = 1 # amd this is the second comment
          # ... and now a third
 text = "# This is not a correct because it's inside quotes."
+
+# Day 2
+
+Variables and Types
+There are several types of variables in Python, including integers, which are whole numbers; floats, which are decimal numbers; complex numbers, which are used for complex mathematical calculations; and strings, which are collections of characters. Booleans, which are true or false values, are another type of variable in Python. When working with strings, the plus sign is used to concatenate them, but it cannot be used to add strings and numbers. Error messages can provide useful information when working with Python.
+
+# Data Structures 
+# Lists
+ar_list = [1,2,3,4]
+    print(ar_list)
+
+# Sets 
+ar_set={1,2,3,4}
+  print(ar_set)
+out(1,2,3,4)
+
+type(ar_set)
+out: set
+
+# Operators
+
+Arithmetic operator
++, *, **, /, %
+
+Arithmetic Operators with Strings
+ 'string 1' + 'string 2'
+ out: 'string 1 string 2'
+
+ # Control Flow
+ # If / Else statements
+  a=true, b=false, c=true
+  if a:
+      print('It is true')
+      print('Also print this')
+  if b:
+      print('Both are true'
+  if b:
+      print('All three are true')
+  else:
+    print('It is false')
+    print('Always  print this')
+
+  out:
+    It is true
+    Also print this
+    Always print this
+
+# For loops 
+
+  a = [1, 2, 3, 4]
+  for number in a:
+      print(number)
+  out: 1
+       2
+       3
+       4
+
+ # Functions
+
+ def multiply(val1, val2);
+   return val1 *val2
+multiply(3, 4)
+out: 12
+
+a = [1, 2, 3]
+ def appendfour(arList);
+ arList.append(4)
+appendFour(a)
+print(a)
+out: [1, 2, 3, 4]
+
+print(print('Hello, World!'))
+Hello, World!
+None
+
+# Classes 
+class Dog:
+      def _init_(self, name):
+        self.name = name
+        self.legs = 4
+
+      def speak(self):
+        print(self.name + 'says: Bark!')
+
+my_dog = Dog('Rover')
+another_dog = Dog('Fluffy')
+
+my_dog.speak()
+Rover says: Bark!
+
+another_dog.speak()
+Fluffy says: Bark!
+
+
+
+    
+
+    
+    
+
+
+
