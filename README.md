@@ -158,7 +158,100 @@ output: print(mystring)
   In: smileBytes = bytearray('😊', 'utf-8')
   out: '😊'
 
-    
+ # If and Else
+
+ # 1, 2, Fizz, 4, Buzz, 7, 8, Fizz, Buzz, 11, Fizz, 13, FizzBuzz, 16
+
+for n in range(1, 101):
+    if n % 15 == 0:
+        print('FizzBuzz')
+    else:
+        if n % 3 == 0:
+            print('Fizz')
+        else:
+            if n % 5 == 0:
+                print('Buzz')
+            else:
+                print(n)
+
+output:
+
+ 
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz   
+
+# Whileloops
+from datetime import  datetime
+
+wait_until = datetime.now().second + 2
+while datetime.now().second != wait_until:
+    1 + 1
+
+print(f'We are at {wait_until} seconds!')
+
+output:
+         We are at 35 seconds!
+
+# For
+
+animalLookup = {
+    'á': ['aardvark', 'antelope'],
+    'b': ['bear'],
+    'c': ['cat'],
+    'd': ['dog'],
+}
+
+for letter, animals in animalLookup.items():
+    pass
+for letter, animals in animalLookup.items():
+    if len(animals) > 1:
+        continue
+    print(f'Only one animal! {animals[0]}')
+
+for letter, animals in animalLookup.items():
+    if len(animals) > 1:
+        print(f'Found {len(animals)} animals: {animals}')
+        break
+
+output:
+Only one animal! bear
+Only one animal! cat
+Only one animal! dog
+Found 2 animals: ['aardvark', 'antelope']
+
+# Faster finding primes solution
+
+def allPrimesUpTo(num):
+    primes = [2]
+    for number in range(3, num):
+        sqrtNum = number ** 0.5
+        for factor in primes:
+            if number % factor == 0:
+                # Not prime
+                break
+            if factor > sqrtNum:
+                # It's prime!
+                primes.append(number)
+                break
+    return primes
+
+if __name__ == "__main__":
+    # Testing the function
+    print(allPrimesUpTo(10))
+    print(allPrimesUpTo(100))
 
     
     
