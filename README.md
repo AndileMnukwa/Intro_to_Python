@@ -1,5 +1,5 @@
 # Python
-# Day1
+# Week 1
 
 Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991. Python emphasizes code readability and allows programmers to express concepts in fewer lines of code compared to other programming languages.
 
@@ -8,9 +8,7 @@ span = 1 # amd this is the second comment
          # ... and now a third
 text = "# This is not a correct because it's inside quotes."
 
-# Day 2
-
-Variables and Types
+# Variables and Types
 There are several types of variables in Python, including integers, which are whole numbers; floats, which are decimal numbers; complex numbers, which are used for complex mathematical calculations; and strings, which are collections of characters. Booleans, which are true or false values, are another type of variable in Python. When working with strings, the plus sign is used to concatenate them, but it cannot be used to add strings and numbers. Error messages can provide useful information when working with Python.
 
 # Data Structures 
@@ -252,6 +250,73 @@ if __name__ == "__main__":
     # Testing the function
     print(allPrimesUpTo(10))
     print(allPrimesUpTo(100))
+
+# Week 2
+
+# AnatomyOfAFunction
+# Named Parameters 
+
+def performOperation(num1, num2, operation='sum', message='Default message'):
+         print(message)
+         if operation == 'sum':
+                  return num1 + num2
+         if operation == 'multiply':
+                  rewturn num1 * num2
+         performOperation(2, 3, message='A new message',operation='multiply'
+
+         output: 
+                   A new message 
+                   6
+
+# **kwargs
+def performOperation(*args, operation='sum'):
+         if operation == 'sum':
+                  return sum(args)
+         if operation == 'multiply':
+                  return math.prod(args)
+         performOperation(1,2,3, 7, 8, opration='sum'
+output: 27
+
+# Function Scope
+def performOperation(*args, **kwargs):
+         print(args)
+         print(kwargs)
+performOperation(1, 2, operation='sum')
+ (1, 2)
+ {'operation': 'sum'}
+
+ # Global and Local scope
+
+message = 'Some global data'
+def funtion1(varA, varB):
+         print(message)
+         print(locals())
+
+def function2(varC, varB):
+         print(message)
+         print(locals())
+function1(1, 2)
+function2(3, 4)
+
+output: Some global data
+         {'varA': 1, 'varB': 2}
+         Some global data
+         {'varC': 3, 'varB': 4}
+
+# Variables as Functions
+         x = 5
+          def x():
+          return 5
+# Functions are not unique or special in Python — they are simply variables associated with some data.
+
+# Lambda Functions
+input: 2 + 3
+output: 5
+
+myList = [{'num': 3}, {'num': 2}, {'num': 1}]
+sorted(myList.key=lambda x: x['num'])
+
+output: [{'num': 1), {'num': 2}, {'num': 3}]
 
     
     
